@@ -120,8 +120,7 @@ FROM sys.dm_exec_sessions AS ses JOIN sys.dm_tran_session_transactions AS tst
 ON ses.session_id=tst.session_id
 JOIN sys.dm_tran_active_transactions AS tat 
 ON tst.transaction_id = tat.transaction_id
-order by 1 asc
-</CommandText>
+order by 1 asc</CommandText>
       </Query>
       <Fields>
         <Field Name="transaction_id">
