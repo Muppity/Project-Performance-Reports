@@ -54,6 +54,7 @@
     <Report Include="ReportDiskPerformance2.rdl" />
     <Report Include="ReportDiskPerformance3.rdl" />
     <Report Include="ReportIndexPerformance.rdl" />
+    <Report Include="ReportMemoryAndCPUPerformance.rdl" />
     <Report Include="ReportTempDB.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
