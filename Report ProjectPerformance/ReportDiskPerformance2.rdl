@@ -16,8 +16,9 @@
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>DataSource1</DataSourceName>
-        <CommandText>SELECT        [DB Name], [DB File Name], [File ID], [DB File Type], [Disk Location], [Avg Read Stall], [Read Performance], [Num Reads], Avg_Write_Stall, [Write Performance], [Num Writes], [Size on Disk GB], dateRec
-FROM            Disk_Check</CommandText>
+        <CommandText>SELECT        TOP (10) [DB Name], [DB File Name], [File ID], [DB File Type], [Disk Location], [Avg Read Stall], [Read Performance], [Num Reads], Avg_Write_Stall, [Write Performance], [Num Writes], [Size on Disk GB], dateRec
+FROM            Disk_Check
+ORDER BY dateRec DESC, Avg_Write_Stall DESC, [Avg Read Stall]</CommandText>
       </Query>
       <Fields>
         <Field Name="DB_Name">
