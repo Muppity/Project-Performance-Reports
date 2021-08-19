@@ -50,6 +50,7 @@
     <Reports>@(Report)</Reports>
   </PropertyGroup>
   <ItemGroup>
+    <Report Include="QueryStoreInstanceDashboard.rdl" />
     <Report Include="ReportDiskPerformance.rdl" />
     <Report Include="ReportDiskPerformance2.rdl" />
     <Report Include="ReportDiskPerformance3.rdl" />
